@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-  margin-top: 50px;
+  padding: 50px;
+  margin-top: 40px;
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -27,6 +28,10 @@ body {
   height: 400px;
   @media screen and (max-width: 992px) {
     flex-basis: 49%;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-basis: 100%;
   }
 }
 
@@ -51,4 +56,66 @@ body {
   font-size: small;
   font-family: monospace;
   color: #333;
+}
+
+.title {
+  color: #333;
+  font-family: monospace;
+  text-align: center;
+}
+
+footer .links {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul a {
+  text-decoration: none;
+  color: #fff;
+  font-family: monospace;
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.icons i {
+  font-size: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.icons i:hover {
+  transform: scale(1.5);
+}
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.fa-instagram {
+  color: #c13584;
+}
+
+.fa-youtube {
+  color: #ff0000;
 }
