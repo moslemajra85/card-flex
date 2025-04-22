@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakpoints</title>
+
+    <style>
+      body {
+        @media screen and (min-width: 600px) {
+          background-color: black;
+          color: #fff;
+        }
+
+        @media screen and (min-width: 768px) {
+          background-color: orange;
+        }
+
+        @media screen and (min-width: 992px) {
+          background-color: green;
+        }
+
+        @media screen and (min-width: 1200px) {
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello There</h1>
+    <script>
+      window.addEventListener('resize', function () {
+        let width = window.innerWidth;
+        document.body.innerHTML = `<h1>Width of the screen is ${width}px</h1>`;
+      });
+    </script>
+  </body>
+</html>
