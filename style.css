@@ -7,17 +7,27 @@
 body {
   font-family: sans-serif;
 }
+
+.container {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .card {
   border: 1px solid lightgray;
-  max-width: 350px;
-  margin: 40px auto;
+  flex-basis: 32%;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
   border-radius: 8px;
-  height: 500px;
+  height: 400px;
+  @media screen and (max-width: 992px) {
+    flex-basis: 49%;
+  }
 }
 
 .card .upper {
